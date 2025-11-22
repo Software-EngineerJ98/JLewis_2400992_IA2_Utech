@@ -1,0 +1,100 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UrbanStep Footwear — Products</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+
+        <nav class="main-nav">
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Cart.html">Cart(<span id="cart-count">0</span>)</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Login.html">Login</a>
+            <a href="Registration.html">Register</a>
+        </nav>
+    </div>
+ </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>UrbanStep Footwear</h1>
+      <p>Comfort. Style. City-ready.</p>
+    </section>
+
+    <section aria-labelledby="products-heading">
+      <h2 id="products-heading">Our Products</h2>
+
+      <div id="products-grid" class="products-grid">
+
+        <!-- PRODUCT 1 -->
+        <article class="card">
+          <img src="../Assets/greyshoes.jpg" alt="Urban Classic Sneakers">
+          <h3>Urban Classic Sneakers</h3>
+          <p class="text-muted">Lightweight daily sneakers for all-day comfort.</p>
+          <p><strong>$69.99</strong></p>
+          <button class="btn add-to-cart" data-id="p101">Add to Cart</button>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="card">
+          <img src="../Assets/runningshoes.jpg" alt="StreetFlex Runners">
+          <h3>StreetFlex Runners</h3>
+          <p class="text-muted">Breathable city running shoes with flexible soles.</p>
+          <p><strong>$79.99</strong></p>
+          <button class="btn add-to-cart" data-id="p102">Add to Cart</button>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="card">
+          <img src="../Assets/slipon.jpg" alt="MetroSlip On">
+          <h3>MetroSlip On</h3>
+          <p class="text-muted">Effortless slip-on style for fast-paced mornings.</p>
+          <p><strong>$54.99</strong></p>
+          <button class="btn add-to-cart" data-id="p103">Add to Cart</button>
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="card">
+          <img src="../Assets/brownshoes.jpg" alt="UrbanStep Prime">
+          <h3>UrbanStep Prime</h3>
+          <p class="text-muted">Premium leather sneaker designed for style + durability.</p>
+          <p><strong>$119.99</strong></p>
+          <button class="btn add-to-cart" data-id="p104">Add to Cart</button>
+        </article>
+
+        <!-- PRODUCT 5 -->
+        <article class="card">
+          <img src="../Assets/walkingshoes.jpg" alt="CityWalk Canvas">
+          <h3>CityWalk Canvas</h3>
+          <p class="text-muted">Minimalist canvas shoes for everyday use.</p>
+          <p><strong>$49.99</strong></p>
+          <button class="btn add-to-cart" data-id="p105">Add to Cart</button>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

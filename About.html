@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us — UrbanStep</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+        <nav class="main-nav">
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Cart.html">Cart(<span id="cart-count">0</span>)</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Login.html">Login</a>
+            <a href="Registration.html">Register</a>
+        </nav>
+    </div>
+</header>
+  <main class="container">
+    <h2>About UrbanStep</h2>
+    <section class="about">
+      <p><strong>Business name:</strong> UrbanStep Footwear</p>
+      <p><strong>Owner / Student:</strong> Jovani Lewis</p>
+      <p><strong>ID#:</strong> 2400992</p>
+      <p><strong>Email:</strong> <a href="mailto:jovani.lewis3@gmail.com">jovani.lewis3@gmail.com</a></p>
+      <p><strong>Module:</strong> Web Programming (CIT2011)</p>
+      <p><strong>Assignment:</strong> Individual Assignment #2</p>
+      <p><strong>Day/Time:</strong> Web Programming Tutorial - Tuesday 11am</p>
+
+      <h3>About our Brand</h3>
+      <p>UrbanStep creates lightweight, comfortable city footwear for daily commuters and style-conscious urbanites. Our mission is to make movement effortless.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

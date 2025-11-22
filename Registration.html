@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — UrbanStep</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+    </div>
+</header>
+  <main class="container auth-page">
+    <h2>Create an Account</h2>
+    <form id="register-form" novalidate>
+      <label for="fullname">Full name</label>
+      <input id="fullname" name="fullname" type="text" required>
+
+      <label for="dob">Date of Birth</label>
+      <input id="dob" name="dob" type="date" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" required>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required minlength="6">
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Register</button>
+        <a href="login.html" class="btn ghost">Back to Login</a>
+      </div>
+
+      <p id="register-error" class="form-error" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // registration validation handled in script.js
+  </script>
+</body>
+</html>

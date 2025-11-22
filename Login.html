@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — UrbanStep</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+    </div>
+</header>
+<main class="container auth-page">
+    <h2>Login</h2>
+    <form id="login-form" novalidate>
+      <label for="login-username">Username</label>
+      <input id="login-username" name="username" type="text" required>
+
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" required>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Login</button>
+        <a href="Registration.html" class="btn ghost">Register</a>
+      </div>
+
+      <p id="login-error" class="form-error" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // basic login validation handled in script.js
+  </script>
+</body>
+</html>

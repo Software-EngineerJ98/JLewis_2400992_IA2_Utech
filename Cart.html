@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — UrbanStep</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+        <nav class="main-nav">
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Cart.html">Cart(<span id="cart-count">0</span>)</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Login.html">Login</a>
+            <a href="Registration.html">Register</a>
+        </nav>
+    </div>
+</header>
+  <main class="container">
+    <h2>Your Cart</h2>
+     <div id="cart-container">
+     <!-- Cart table rendered by script.js --></strong>
+    </div>
+
+    <div class="cart-actions">
+      <button id="clear-cart" class="btn ghost">Clear All</button>
+      <a href="checkout.html" class="btn">Check Out</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

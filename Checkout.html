@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — UrbanStep</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+        <a href="Products.html" class="logo brand">
+	   <img src="../Assets/USlogo.png" alt="UrbanStep Logo">
+           <span>UrbanStep</span>
+	</a>
+        <nav class="main-nav">
+            <a href="Products.html">Products</a>
+            <a href="About.html">About</a>
+            <a href="Cart.html">Cart(<span id="cart-count">0</span>)</a>
+            <a href="Checkout.html">Checkout</a>
+            <a href="Login.html">Login</a>
+            <a href="Registration.html">Register</a>
+        </nav>
+    </div>
+</header>
+  <main class="container">
+    <h2>Checkout</h2>
+
+    <section id="checkout-summary" aria-label="Order Summary">
+      <!-- summary inserted by script.js -->
+    </section>
+
+    <form id="shipping-form" novalidate>
+      <h3>Shipping Details</h3>
+      <label for="ship-name">Full name</label>
+      <input id="ship-name" name="shipName" type="text" required>
+
+      <label for="ship-address">Address</label>
+      <input id="ship-address" name="shipAddress" type="text" required>
+
+      <label for="ship-city">City</label>
+      <input id="ship-city" name="shipCity" type="text" required>
+
+      <label for="ship-amount">Amount to pay (USD)</label>
+      <input id="ship-amount" name="shipAmount" type="number" step="0.01" required>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Confirm</button>
+        <button type="button" id="cancel-order" class="btn ghost">Cancel</button>
+        <button type="button" id="close-checkout" class="btn ghost">Back to Cart</button>
+      </div>
+
+      <p id="checkout-message" class="form-error" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> UrbanStep Footwear</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
